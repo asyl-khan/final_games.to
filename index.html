@@ -1238,8 +1238,8 @@
             const n1 = Math.floor(Math.random() * 11);
             const n2 = Math.floor(Math.random() * 11);
             const n3 = Math.floor(Math.random() * 11);
-            const op1 = Math.random() < 0.5 ? '+' : '+';
-            const op2 = Math.random() < 0.5 ? '+' : '+';
+            const op1 = Math.random() < 0.5 ? '+' : '-';
+            const op2 = Math.random() < 0.5 ? '+' : '-';
             const expr = `${n1} ${op1} ${n2} ${op2} ${n3}`;
             mathAnswer = eval(expr);
             document.getElementById('math-primer').textContent = expr + ' = ?';
